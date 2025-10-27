@@ -91,6 +91,12 @@ input[type="number"] {
 .count-value {
   font-size: 2rem;
   font-weight: 600;
-  color: #111827;
+  color: #000000;
+}
+
+input[type="number"] {
+  color: #f9fafb; 
+  background-color: #1f2937; 
+  border-color: #374151; 
 }
 

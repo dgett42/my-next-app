@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, type ChangeEvent } from "react";
 
 export default function Counter({ initialCount = 0, initialStep = 1 }) {
@@ -34,7 +36,7 @@ export default function Counter({ initialCount = 0, initialStep = 1 }) {
 
         <div aria-live="polite" className="text-right">
           <p className="text-sm text-gray-500">Current Count</p>
-          <h2 className="text-4xl font-semibold">{count}</h2>
+          <h2 className="text-4xl font-semibold count-value">{count}</h2>
         </div>
       </div>
 
