@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This project is a simple web app built with that features a reusable counter component. It lets you increase, decrease, or reset a count and change the step value.
 
 ## Getting Started
 
-First, run the development server:
+How to run Locally:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+How to build
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+npm run build
+npm start
+```
+Features:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    Counter displays and updates correctly
 
-## Learn More
+    Increment and decrement by step value
 
-To learn more about Next.js, take a look at the following resources:
+    Reset returns to initial count
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    Step input updates behavior live (min = 1)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    Decrement button disables when count would drop below 0
 
-## Deploy on Vercel
+    Supports initialCount and initialStep props for reusability
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    Two counter components rendered on the home page
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    Accessible with labeled buttons
+
+Known Issues:
+
+    Count and step values reset when the page is refreshed
+
+    No data persistence or external state management
+
+    Styling is minimal and focused on function rather than design
