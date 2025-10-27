@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
 }
 
 @theme inline {
@@ -24,3 +24,73 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.counter {
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  background: #000000;
+  padding: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.counter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.counter-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+button {
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  background: #000000;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #000000;
+}
+
+button:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+button:disabled {
+  background: #f1f5f9;
+  color: #000000;
+  cursor: not-allowed;
+}
+
+input[type="number"] {
+  border: 1px solid #000000;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  width: 6rem;
+  font-size: 1rem;
+}
+
+.count {
+  text-align: right;
+  color: black;
+}
+
+.count-label {
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+.count-value {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #111827;
+}
+
